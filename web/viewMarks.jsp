@@ -35,6 +35,7 @@
                     <th scope="col">Total</th>
                     <th scope="col">Percentage</th>
                     <th scope="col">Pass/Fail</th>
+                    <th scope="col">Actions</th>
 
                 </tr>
             </thead>
@@ -70,6 +71,7 @@
                     <td><%= total %></td>
                     <td><%= percentage %>%</td>
                     <td><%= result %></td>
+                    <td><a href="marksheet.jsp?studentId=<%= rs.getInt("id") %>">View</a></td>
                 </tr>
                 <%
                         } 
